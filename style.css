@@ -91,3 +91,77 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* ...existing code... */
+
+.about-section {
+  background: #f8fafc;
+  padding: 4rem 0 3rem 0;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #22223b;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about-tagline {
+  text-align: center;
+  color: #3b82f6;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(59, 130, 246, 0.08);
+  background: #e0e7ef;
+}
+
+.about-text {
+  flex: 1 1 320px;
+  font-size: 1.08rem;
+  color: #444;
+  line-height: 1.7;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .about-image img {
+    width: 140px;
+    height: 140px;
+  }
+  .about-text {
+    padding: 1rem 1.2rem;
+  }
+}
+
+/* ...existing code... */
