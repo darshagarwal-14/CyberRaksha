@@ -6,9 +6,10 @@
   <title>CyberRaksha</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- Navbar -->
+  
   <nav class="navbar">
     <div class="navbar-logo">CyberRaksha</div>
     <ul class="navbar-links">
@@ -20,17 +21,19 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1 class="tagline">Explore Real-World Cybersecurity</h1>
       <p>Showcasing powerful projects tackling real digital threats.</p>
+
     </div>
+    <button class="scroll-btn" onclick="scrollToContent()">↓ Scroll Down</button>
   </section>
 
-  <!-- About Section -->
-  <section class="about-section">
+  
+  <section id = "main-content" class="about-section">
     <div class="about-container">
       <h2>About Us</h2>
       <p class="about-tagline">Empowering digital safety for everyone.</p>
@@ -47,5 +50,23 @@
     </div>
   </section>
 
+
+
+<section class="contact-container">
+  <h2>Contact Us</h2>
+  <p>Have questions or suggestions? Reach out to us!</p>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<script src="hero.js"></script>
+
 </body>
+
 </html>
