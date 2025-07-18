@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* HERO SECTION */
+
 .hero {
   height: 100vh;
   background: linear-gradient(to bottom, #f5f5f5, #e5e7eb);
@@ -54,7 +54,7 @@ body {
   box-shadow: 0 6px 25px rgba(56, 189, 248, 0.5);
 }
 
-/* PROJECT SECTION */
+
 .projects {
   padding: 5rem 2rem;
   background-color: #ffffff;
@@ -75,7 +75,7 @@ body {
   margin: 0 auto;
 }
 
-/* ANIMATIONS */
+
 @keyframes fadeUp {
   0% {
     transform: translateY(40px);
@@ -92,7 +92,7 @@ body {
   to { opacity: 1; }
 }
 
-/* ...existing code... */
+
 
 .about-section {
   background: #f8fafc;
@@ -164,10 +164,6 @@ body {
   }
 }
 
-/* ...existing code... */
-
-
-/* ===== NAVBAR ===== */
 .navbar {
   background-color: white;
   color: black;
@@ -205,7 +201,7 @@ body {
 }
 
 
-/* ===== HERO SECTION ===== */
+
 .hero {
   background-image: url('your-image.jpg');
   background-size: cover;
@@ -240,7 +236,7 @@ body {
 }
 
 
-/* ===== ABOUT SECTION ===== */
+
 .about-section {
   padding: 4rem 2rem;
   background-color: #f9f9f9;
@@ -314,7 +310,7 @@ body {
   color: #333;
 }
 
-/* ========== FORM ========== */
+
 .contact-form {
   background-color: #0f1c39;
   padding: 2rem;
@@ -326,7 +322,7 @@ body {
   gap: 1.2rem;
 }
 
-/* Input, Textarea, Button Styles */
+
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
@@ -351,13 +347,13 @@ body {
   color: #999999;
 }
 
-/* Resize Textarea Only Vertically */
+
 .contact-form textarea {
   resize: vertical;
   min-height: 120px;
 }
 
-/* Button Styles */
+
 .contact-form button {
   background-color: #f8fafc;
   color: black;

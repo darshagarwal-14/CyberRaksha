@@ -8,64 +8,48 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav style="background-color: white; color: black; padding: 1rem 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-size: 1.25rem; font-weight: 600; letter-spacing: 0.05em;">CyberVault</div>
-    <ul style="display: flex; gap: 1.5rem; font-size: 0.875rem; font-weight: 500; list-style: none; margin: 0; padding: 0;">
-      <li><a href="index.html" style="color: black; text-decoration: none;" onmouseover="this.style.color='#3b82f6'" onmouseout="this.style.color='black'">Home</a></li>
-      <li><a href="#" style="color: black; text-decoration: none;" onmouseover="this.style.color='#3b82f6'" onmouseout="this.style.color='black'">Projects</a></li>
-      <li><a href="#" style="color: #3b82f6; font-weight: 600; text-decoration: none;">Submit</a></li>
-      <li><a href="#" style="color: black; text-decoration: none;" onmouseover="this.style.color='#3b82f6'" onmouseout="this.style.color='black'">Learn</a></li>
-      <li><a href="#" style="color: black; text-decoration: none;" onmouseover="this.style.color='#3b82f6'" onmouseout="this.style.color='black'">About</a></li>
+  <nav class="navbar">
+    <div class="navbar-logo">CyberRaksha</div>
+    <ul class="navbar-links">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="project.html" class="nav-link">Projects</a></li>
+      <li><a href="submit.html" class="nav-link">Submit</a></li>
+      
     </ul>
   </nav>
 
   <!-- Form Section -->
-  <section style="position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1rem;">
-    <div style="position: absolute; inset: 0;">
-      <img src="your-background.jpg" alt="Cyber Background" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6; filter: blur(4px);" />
-      <div style="position: absolute; inset: 0; background-color: black; opacity: 0.4;"></div>
+  <section class="form-section">
+    <div class="background-layer">
+      <img src="your-background.jpg" alt="Cyber Background" class="background-image" />
+      <div class="overlay"></div>
     </div>
 
-    <div style="position: relative; z-index: 10; width: 100%; max-width: 40rem; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 1rem; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3); color: white;">
-      <h2 style="font-size: 1.875rem; font-weight: 600; margin-bottom: 1.5rem; text-align: center;">Submit Your Project</h2>
-
-      <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.25rem;">
+    <div class="form-container">
+      <h2 class="form-title">Submit Your Project</h2>
+      <form action="#" method="POST" class="project-form">
         <div>
-          <label for="title" style="display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem; color: #d1d5db;">Project Title</label>
-          <input type="text" id="title" name="title" required placeholder="e.g. AI Phishing Detector"
-            style="width: 100%; padding: 0.5rem 1rem; background-color: transparent; border: 1px solid #9ca3af; border-radius: 0.375rem; color: white; font-size: 1rem; outline: none;" />
+          <label for="title">Project Title</label>
+          <input type="text" id="title" name="title" required placeholder="e.g. AI Phishing Detector" />
         </div>
-
         <div>
-          <label for="author" style="display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem; color: #d1d5db;">Your Name</label>
-          <input type="text" id="author" name="author" required placeholder="e.g. Darsh A."
-            style="width: 100%; padding: 0.5rem 1rem; background-color: transparent; border: 1px solid #9ca3af; border-radius: 0.375rem; color: white; font-size: 1rem; outline: none;" />
+          <label for="author">Your Name</label>
+          <input type="text" id="author" name="author" required placeholder="e.g. Darsh A." />
         </div>
-
         <div>
-          <label for="tech" style="display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem; color: #d1d5db;">Technologies Used</label>
-          <input type="text" id="tech" name="tech" placeholder="e.g. Python, Nmap"
-            style="width: 100%; padding: 0.5rem 1rem; background-color: transparent; border: 1px solid #9ca3af; border-radius: 0.375rem; color: white; font-size: 1rem; outline: none;" />
+          <label for="tech">Technologies Used</label>
+          <input type="text" id="tech" name="tech" placeholder="e.g. Python, Nmap" />
         </div>
-
         <div>
-          <label for="link" style="display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem; color: #d1d5db;">Project Link</label>
-          <input type="url" id="link" name="link" placeholder="https://github.com/your-project"
-            style="width: 100%; padding: 0.5rem 1rem; background-color: transparent; border: 1px solid #9ca3af; border-radius: 0.375rem; color: white; font-size: 1rem; outline: none;" />
+          <label for="link">Project Link</label>
+          <input type="url" id="link" name="link" placeholder="https://github.com/your-project" />
         </div>
-
         <div>
-          <label for="desc" style="display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem; color: #d1d5db;">Short Description</label>
-          <textarea id="desc" name="desc" rows="4" placeholder="What does your project do? Why is it useful?"
-            style="width: 100%; padding: 0.5rem 1rem; background-color: transparent; border: 1px solid #9ca3af; border-radius: 0.375rem; color: white; font-size: 1rem; outline: none;"></textarea>
+          <label for="desc">Short Description</label>
+          <textarea id="desc" name="desc" rows="4" placeholder="What does your project do? Why is it useful?"></textarea>
         </div>
-
-        <div style="text-align: center;">
-          <button type="submit"
-            style="background-color: #2563eb; color: white; font-weight: 600; padding: 0.5rem 1.5rem; border-radius: 0.375rem; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.5); border: none; cursor: pointer; transition: background-color 0.3s ease;">
-            Submit Project
-          </button>
+        <div class="submit-wrapper">
+          <button type="submit" class="submit-btn">Submit Project</button>
         </div>
       </form>
     </div>
