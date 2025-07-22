@@ -16,7 +16,11 @@
       <li><a href="submit.html" class="nav-link">Publish</a></li>
       <li><a href="apply.html" class="nav-link">Apply</a></li>
     </ul>
+    
   </nav>
+    <div class="search-bar-container">
+  <input type="text" id="projectSearch" class="search-bar" placeholder="Search projects...">
+</div>
 
   <section class="projects-section">
     <div class="projects-container">
@@ -51,5 +55,23 @@
   <footer class="footer">
     <p>&copy; 2025 CyberRaksha. All rights reserved.</p>
   </footer>
+
+  <script>
+  const searchInput = document.getElementById('projectSearch');
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    const cards = document.querySelectorAll('.project-card');
+    cards.forEach(card => {
+      const title = card.querySelector('.project-title')?.textContent.toLowerCase() || '';
+      const desc = card.querySelector('.project-description')?.textContent.toLowerCase() || '';
+      const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase()).join(' ');
+      if (title.includes(query) || desc.includes(query) || tags.includes(query)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
 </body>
 </html>
