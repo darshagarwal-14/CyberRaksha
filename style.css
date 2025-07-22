@@ -25,6 +25,35 @@ body {
   color: #101042;
 }
 
+.navbar-logo img {
+  height: 38px;
+  width: auto;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+.search-bar-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  width: 60%;
+  max-width: 350px;
+  padding: 0.7rem 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid #b5c6d1;
+  font-size: 1rem;
+  background: #fff;
+  color: #101042;
+  box-shadow: 0 2px 8px rgba(19,19,80,0.08);
+  transition: border-color 0.2s;
+}
+
+.search-bar:focus {
+  border-color: #131350;
+  outline: none;
+}
+
 .navbar-links {
   list-style: none;
   display: flex;
