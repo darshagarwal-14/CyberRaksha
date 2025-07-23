@@ -183,6 +183,31 @@ section {
   box-shadow: 0 4px 24px rgba(59, 130, 246, 0.08);
   background: #FAF9F6;
 }
+.about-image2 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 1.5rem;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 24px rgba(19,19,80,0.10);
+  padding: 2rem 2.5rem;
+  margin: 1.5rem auto 0 auto;
+  max-width: 400px;
+}
+
+.about-image2 img {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  border-radius: 0.7rem;
+  transition: transform 0.2s;
+}
+
+.about-image2 img:hover {
+  transform: scale(1.12) rotate(-6deg);
+}
 
 .about-text {
   flex: 1 1 320px;
