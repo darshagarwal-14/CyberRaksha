@@ -386,3 +386,38 @@ section {
   box-shadow: 0 12px 24px rgba(19, 19, 80, 0.2); /* stronger shadow */
   cursor: pointer;
 }
+
+.socials-banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: #d4f8e8; /* light green */
+  padding: 3rem 0 2.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image2 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 1.5rem;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 24px rgba(19,19,80,0.10);
+  padding: 2rem 2.5rem;
+  margin: 1.5rem auto 0 auto;
+  max-width: 400px;
+}
+
+.about-image2 img {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  border-radius: 0.7rem;
+  transition: transform 0.2s;
+}
+
+.about-image2 img:hover {
+  transform: scale(1.12) rotate(-6deg);
+}
